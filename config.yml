@@ -1,8 +1,9 @@
 namespaces:
-- o
-- de
-- .de
-- github: .
+  - leo
+  - o
+  - de
+  - .de
+  - github: .
 defaultKeyword: g
 language: de
 country: de
