@@ -44,6 +44,12 @@ hp 0:
 qr 1:
   title: Generation QR-Code
   url: http://qrcode.kaywa.com/img.php?s=8&d={%url}
+so 0:
+  url: https://stackoverflow.com/
+  title: Stack Overflow
+so 1:
+  url: https://stackoverflow.com/search?q=<query>
+  title: Stack Overflow
 urld 1:
   title: URL Decode
   url: http://stefanschramm.net/dev/postredirector/?_target=http%3A//www.functions-online.com/de/index.php%3Fsite%3Durldecode&str={%input}
