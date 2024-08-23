@@ -7,25 +7,10 @@ a 1:
   url: http://smile.amazon.de/gp/search?ie=UTF8&keywords={%Suche}
 db< 1:
   title: DB-Auskunft nach Hause
-  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S={%Start}&Z=celle&start=1
-db< 2:
-  title: DB-Auskunft nach Hause
-  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S={%Start}&Z=celle&T={%Zeit}&start=1
-db< 3:
-  title: DB-Auskunft nach Hause
-  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S={%Start}&Z=celle&T={%Zeit}&D={%Datum}&start=1
+  url: 'https://www.bahn.de/buchung/start?STS=false&so=<Start: {type: city}>&zo=Celle&hd=<$now: {output: YYYY-MM-DD}>T<$now: {output: HH:mm:00}>#trovu[waitBeforeFill]=4000&trovu[submit]=button.quick-finder-basic__search-btn'
 db> 1:
   title: DB-Auskunft von Zuhause
-  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S=celle&Z={%Ziel}&start=1
-db> 2:
-  title: DB-Auskunft von Zuhause
-  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S=celle&Z={%Ziel}&T={%Zeit}&start=1
-db> 3:
-  title: DB-Auskunft von Zuhause
-  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S=celle&Z={%Ziel}&T={%Zeit}&D={%Datum}&start=1
-ez 0:
-  title: EZTV
-  url: http://eztv.it/
+  url: 'https://www.bahn.de/buchung/start?STS=false&so=Celle&zo=<Ziel: {type: city}>&hd=<$now: {output: YYYY-MM-DD}>T<$now: {output: HH:mm:00}>#trovu[waitBeforeFill]=4000&trovu[submit]=button.quick-finder-basic__search-btn'
 gd< 1:
   title: Google Directions nach Hause
   url: http://maps.google.com/maps?hl={$language}&f=d&saddr={%start}&daddr=Trumannskamp+21+Celle
@@ -38,9 +23,6 @@ gmail 0:
 gr 0:
   title: Feedly
   url: https://feedly.com/i/collection/content/user/5a18b4a3-428a-4a9b-8e76-6fae95fca14d/category/_prio1
-hp 0:
-  title: Homepage
-  url: http://blog.lutz-lengemann.name
 qr 1:
   title: Generation QR-Code
   url: http://qrcode.kaywa.com/img.php?s=8&d={%url}
