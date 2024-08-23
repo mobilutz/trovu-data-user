@@ -1,11 +1,58 @@
-# Documentation:
-# https://trovu.net/docs/shortcuts/
-
-examplekeyword 0: http://www.example.com/
-examplekeyword 1: http://www.example.com/?q=<query>
-examplekeyword 2:
-  url: http://www.example.com/?q=<query>&p=<puery>
-  title: Custom shortcut
-  description: My custom shortcut with the keyword examplekeyword and 2 arguments.
-  tags:
-  - example
+---
+a 0:
+  title: Amazon Smile
+  url: https://smile.amazon.de
+a 1:
+  title: Amazon Smile Suche
+  url: http://smile.amazon.de/gp/search?ie=UTF8&keywords={%Suche}
+db< 1:
+  title: DB-Auskunft nach Hause
+  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S={%Start}&Z=celle&start=1
+db< 2:
+  title: DB-Auskunft nach Hause
+  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S={%Start}&Z=celle&T={%Zeit}&start=1
+db< 3:
+  title: DB-Auskunft nach Hause
+  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S={%Start}&Z=celle&T={%Zeit}&D={%Datum}&start=1
+db> 1:
+  title: DB-Auskunft von Zuhause
+  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S=celle&Z={%Ziel}&start=1
+db> 2:
+  title: DB-Auskunft von Zuhause
+  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S=celle&Z={%Ziel}&T={%Zeit}&start=1
+db> 3:
+  title: DB-Auskunft von Zuhause
+  url: http://reiseauskunft.bahn.de/bin/query.exe/d?S=celle&Z={%Ziel}&T={%Zeit}&D={%Datum}&start=1
+ez 0:
+  title: EZTV
+  url: http://eztv.it/
+gd< 1:
+  title: Google Directions nach Hause
+  url: http://maps.google.com/maps?hl={$language}&f=d&saddr={%start}&daddr=Trumannskamp+21+Celle
+gd> 1:
+  title: Google Directions von Zuhause
+  url: http://maps.google.com/maps?hl={$language}&f=d&saddr=Trumannskamp+21+Celle&daddr={%destination}
+gmail 0:
+  title: Google Mail
+  url: https://mail.google.com
+gr 0:
+  title: Feedly
+  url: https://feedly.com/i/collection/content/user/5a18b4a3-428a-4a9b-8e76-6fae95fca14d/category/_prio1
+hp 0:
+  title: Homepage
+  url: http://blog.lutz-lengemann.name
+qr 1:
+  title: Generation QR-Code
+  url: http://qrcode.kaywa.com/img.php?s=8&d={%url}
+so 0:
+  url: https://stackoverflow.com/
+  title: Stack Overflow
+so 1:
+  url: https://stackoverflow.com/search?q=<query>
+  title: Stack Overflow
+urld 1:
+  title: URL Decode
+  url: http://stefanschramm.net/dev/postredirector/?_target=http%3A//www.functions-online.com/de/index.php%3Fsite%3Durldecode&str={%input}
+yt 1:
+  title: yt
+  url: http://www.youtube.com/results?search_query={%query}
