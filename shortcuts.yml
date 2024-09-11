@@ -11,6 +11,9 @@ db< 1:
 db> 1:
   title: DB-Auskunft von Zuhause
   url: 'https://www.bahn.de/buchung/start?STS=false&so=Celle&zo=<Ziel: {type: city}>&hd=<$now: {output: YYYY-MM-DD}>T<$now: {output: HH:mm:00}>#trovu[waitBeforeFill]=4000&trovu[submit]=button.quick-finder-basic__search-btn'
+gcal 0:
+  title: Fastmail Calender
+  url: https://app.fastmail.com/calendar
 gd< 1:
   title: Google Directions nach Hause
   url: http://maps.google.com/maps?hl={$language}&f=d&saddr={%start}&daddr=Trumannskamp+21+Celle
@@ -18,8 +21,8 @@ gd> 1:
   title: Google Directions von Zuhause
   url: http://maps.google.com/maps?hl={$language}&f=d&saddr=Trumannskamp+21+Celle&daddr={%destination}
 gmail 0:
-  title: Google Mail
-  url: https://mail.google.com
+  title: Fastmail eMail
+  url: https://app.fastmail.com/mail
 gr 0:
   title: Feedly
   url: https://feedly.com/i/collection/content/user/5a18b4a3-428a-4a9b-8e76-6fae95fca14d/category/_prio1
